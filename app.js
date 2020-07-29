@@ -17,7 +17,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/api/user', usersRouter);
 
 const mongoose = require('mongoose');
-const mongo_uri = 'mongodb+srv://Theo:741852@authdb-ncm2p.mongodb.net/test?retryWrites=true';
+const mongo_uri = 'mongodb+srv://Theo:<senha>@authdb-ncm2p.mongodb.net/test?retryWrites=true';
 mongoose.connect(mongo_uri, function (err) {
   if (err) {
     throw err;
